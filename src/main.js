@@ -5,8 +5,8 @@ import $ from 'jquery';
 // import { Currency } from './money-api-fetch';
 
 function showCurrrencies(curOne, curTwo) {
-	$('#curOneDisp').text('This is your first currency' + curOne);
-	$('#curTwoDisp').text('this is your 2nd currency' + curTwo);
+	$('#curOneFont').text('This is your first currency: ' + curOne);
+	$('#curTwoFont').text('this is your 2nd currency: ' + curTwo);
 }
 
 $(document).ready(function() {
@@ -18,11 +18,14 @@ $(document).ready(function() {
 		let curOne = $('#curOne').val();
 		let curTwo = $('#curTwo').val();
 
-		$('#curOneDisp').val('');
-		$('#curTwoDisp').val(' ');
+		$('#curOneFont').val('');
+		$('#curTwoFont').val(' ');
 		showCurrrencies(curOne, curTwo);
 		console.log(curOne);
+		console.log(curTwo);
+		$('#disp-row').show();
 		$('#submit-form').hide();
+		$('#number-form').show();
 	});
 });
 // (async () => {

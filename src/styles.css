@@ -1,0 +1,16 @@
+#curOneFont {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#curTwoFont {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#number-form {
+	display: none;
+	margin-top: 50px;
+}
+
+#disp-row {
+	display: none;
+}
