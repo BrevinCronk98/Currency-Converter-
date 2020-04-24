@@ -1,9 +1,9 @@
 import { Keys } from './keys';
 
 export class Currency {
-	async getCurrencyOne(curOne) {
+	async getCurrencyUSD() {
 		try {
-			let response = await fetch(`https://prime.exchangerate-api.com/v5/${Keys.API_KEY}/latest/${curOne}`);
+			let response = await fetch(`https://prime.exchangerate-api.com/v5/${Keys.API_KEY}/latest/USD`);
 			let jsonifiedResponse;
 			if (response.ok && response.status == 200) {
 				jsonifiedResponse = await response.json();
