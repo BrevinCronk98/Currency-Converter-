@@ -7,6 +7,11 @@ import $ from 'jquery';
 function showCurrrencies(curOne, curTwo) {
 	$('#curOneFont').text('This is your first currency: ' + curOne);
 	$('#curTwoFont').text('this is your 2nd currency: ' + curTwo);
+	$('#disp-row').show();
+	$('#submit-form').hide();
+	$('#number-form').show();
+	$('#curOneFont').val('');
+	$('#curTwoFont').val(' ');
 }
 
 $(document).ready(function() {
@@ -14,18 +19,19 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('#curOne').text(' ');
 		$('#curTwo').text(' ');
-
 		let curOne = $('#curOne').val();
 		let curTwo = $('#curTwo').val();
 
-		$('#curOneFont').val('');
-		$('#curTwoFont').val(' ');
 		showCurrrencies(curOne, curTwo);
 		console.log(curOne);
 		console.log(curTwo);
-		$('#disp-row').show();
-		$('#submit-form').hide();
-		$('#number-form').show();
+	});
+
+	$('#number-form').submit(function(event) {
+		event.preventDefault();
+		$('#num-input').text('');
+		let num = $('#num-input').val();
+		console.log(num);
 	});
 });
 // (async () => {
