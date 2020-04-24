@@ -6,8 +6,26 @@
   <title>Currency Exchange</title>
 </head>
 <body>
-  <h1>header</h1>
-  <p>paragraph</p>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Currency Exchange Calculator</h1>
+      <p>This progam allows you to input an amount of USD and we will convert them to the currency of your choice </p>
+    </div>
+    <div class="row" id="row-one">
+      <div class="col-md-5">
+        <label id="labe-one" for="currency-one-input">Input your desired currency to be converted</label>
+        <input type="text" id="input-one">
+      </div>
+      <div class="col-md-5">
+        <label for="currency-two-input">Enter the curency you would like to convert it into</label>
+        <input type="text" id="input-two">
+      </div>
+      <div class="col-md-2">
+        <button class="button" id="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  
   
 </body>
 </html>
