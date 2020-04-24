@@ -2,7 +2,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-// import { Currency } from './money-api-fetch';
+import { Currency } from './money-api-fetch';
 
 function showCurrrencies(curOne, curTwo) {
 	$('#curOneFont').text('This is your first currency: ' + curOne);
@@ -23,20 +23,38 @@ $(document).ready(function() {
 		let curTwo = $('#curTwo').val();
 
 		showCurrrencies(curOne, curTwo);
-		console.log(curOne);
-		console.log(curTwo);
 	});
 
 	$('#number-form').submit(function(event) {
 		event.preventDefault();
 		$('#num-input').text('');
 		let num = $('#num-input').val();
+		let curOne = $('#curOne').val();
+		let curTwo = $('#curTwo').val();
 		console.log(num);
+		(async () => {
+			let currency = new Currency();
+			const response = await currency.getCurrencyOne(curOne);
+			getElementsForCurOne(response);
+			getValue(response, curTwo);
+		})();
+
+		function getValue(response, curTwo) {
+			let rate = response.conversion_rates;
+			rate = curTwo;
+			console.log(rate);
+			return rate;
+		}
+
+		function getElementsForCurOne(response) {
+			if (response) {
+				$('#num-display').text(`This is the Conversion:  ${response.base}. `);
+				console.log(response);
+			} else {
+				$('#num-display').text(`Oh no there was an error`);
+			}
+		}
 	});
 });
-// (async () => {
-// 	let currency = new Currency();
-// 	const response = await currency.getCurrency(curOne);
-// 	const responseTwo = await currency.getCurrency(curTwo);
-// 	getElementsForCurOne(response);
-// })();
+// let conv = curOne * num * curTwo;
+// console.log(conv);
