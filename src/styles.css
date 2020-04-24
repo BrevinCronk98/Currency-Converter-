@@ -5,12 +5,96 @@
 #curTwoFont {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-#number-form {
-	margin-top: 50px;
+body {
+	background-color: darkslategray;
 }
 
-#disp-row {
+#number-form {
+	margin-top: 75px;
+}
+
+#label-num {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#num-input {
+	border-radius: 15px;
+	background-color: floralwhite;
+}
+
+#num-btn {
+	border-radius: 15px;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}
+
+#jumbo {
+	background-color: cadetblue;
+}
+
+#btn-row {
 	display: none;
-	margin-bottom: 50px;
+}
+
+#num-display {
+	font-size: 25px;
+	color: floralwhite;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}
+
+#conv-disp {
+	font-size: 25px;
+	color: cadetblue;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}
+
+#EUR {
+	border-radius: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#JPY {
+	border-radius: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#RUB {
+	border-radius: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#FJD {
+	border-radius: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#HKD {
+	border-radius: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: cadetblue;
+	color: floralwhite;
+	font-weight: bold;
+	font-size: 18px;
 }

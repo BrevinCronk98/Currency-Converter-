@@ -5,46 +5,45 @@ import $ from 'jquery';
 import { Currency } from './money-api-fetch';
 
 $(document).ready(function() {
-	$('#number-form').submit(function(event) {
+  $('#number-form').submit(function(event) {
 		event.preventDefault();
-		$('#num-input').text('');
-		let num = $('#num-input').val();
-		displayUserNum(num);
-		$('#disp-row').show();
-		$('#number-form').hide();
+	$('#btn-row').show();
+	$('#conv-disp').hide();
 
-		function displayUserNum(num) {
-			$('#num-display').text(`You want to convert  ${num}  Dollars. `);
-		}
+	let num = $('#num-input').val();
+	displayUserNum(num);
+	function displayUserNum(num) {
+		$('#num-display').text(`You want to convert  ${num}  Dollars. `);
+	}
 
-		$('#EUR').click(function(event) {
-			event.preventDefault();
-			(async () => {
-				let currency = new Currency();
-				const response = await currency.getCurrency();
-				console.log(response);
-				convEUR(num, response);
-			})();
+	$('#EUR').click(function(event) {
+		event.preventDefault();
+		(async () => {
+			let currency = new Currency();
+			const response = await currency.getCurrency();
+			convEUR(num, response);
+			$('#conv-disp').show();
+		})();
 
-			function convEUR(num, response) {
-				if (response) {
-					let convEUR;
-					convEUR = parseFloat(num * response.conversion_rates.EUR).toFixed(2);
-					$('#conv-disp').text(`The conversion to Euros is:  ` + convEUR);
-					return convEUR;
-				} else {
-					$('conv-disp').text('Oh no there was an error!');
-				}
+		function convEUR(num, response) {
+			if (response) {
+				let convEUR;
+				convEUR = parseFloat(num * response.conversion_rates.EUR).toFixed(2);
+				$('#conv-disp').text(`The conversion to Euros is:  ` + convEUR);
+				return convEUR;
+			} else {
+				$('conv-disp').text('Oh no there was an error!');
 			}
-		});
+		}
+	});
 
-		$('#JPY').click(function(event) {
-			event.preventDefault();
+	$('#JPY').click(function(event) {
+		event.preventDefault();
 			(async () => {
 				let currency = new Currency();
 				const response = await currency.getCurrency();
-				console.log(response);
 				convJPY(num, response);
+				$('#conv-disp').show();
 			})();
 
 			function convJPY(num, response) {
@@ -64,8 +63,8 @@ $(document).ready(function() {
 			(async () => {
 				let currency = new Currency();
 				const response = await currency.getCurrency();
-				console.log(response);
 				convRUB(num, response);
+				$('#conv-disp').show();
 			})();
 
 			function convRUB(num, response) {
@@ -85,8 +84,8 @@ $(document).ready(function() {
 			(async () => {
 				let currency = new Currency();
 				const response = await currency.getCurrency();
-				console.log(response);
 				convFJD(num, response);
+				$('#conv-disp').show();
 			})();
 
 			function convFJD(num, response) {
@@ -106,8 +105,8 @@ $(document).ready(function() {
 			(async () => {
 				let currency = new Currency();
 				const response = await currency.getCurrency();
-				console.log(response);
 				convHKD(num, response);
+				$('#conv-disp').show();
 			})();
 
 			function convHKD(num, response) {
