@@ -1,0 +1,59 @@
+[33mcommit edc6087ce052d448abcefb97e0dee521af301877[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 14:50:15 2020 -0700
+
+    more work on conversion
+
+[33mcommit 190cf4dc8d6ba2f0156aa6d36061740cb801082a[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 13:56:47 2020 -0700
+
+    debug
+
+[33mcommit 322cf8cde7aecddf0fc3227ed444224732d34df0[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 13:02:01 2020 -0700
+
+    after lunch initial commit
+
+[33mcommit 4aaa4d9c0e0a3a837accebcb394a5c799676f169[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 12:04:08 2020 -0700
+
+    before lunch commit
+
+[33mcommit b70c8966f919d8100699848ef02c0247adf41e2f[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 11:51:25 2020 -0700
+
+    work on function to show conversion
+
+[33mcommit b7304e1a9708d0218c861c17dd1383341e51a41d[m[33m ([m[1;31mbrevin/master[m[33m)[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 11:21:58 2020 -0700
+
+    add keys to gitignore
+
+[33mcommit 3880c86a3f9e3c1d2ae511547df3b927a408fc85[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 10:53:57 2020 -0700
+
+    got api call to proccess, process.env.API_KEY is undefined, debug
+
+[33mcommit d64805d7a7bd42984d7fa84b6abfa1b52e7edef4[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 10:23:26 2020 -0700
+
+    initial work on html complete, work on api calls
+
+[33mcommit fa271f17439b312b3fa28435655fbc944b1b4c97[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 09:44:17 2020 -0700
+
+    NPM webpacks installed and template setup up, website begin
+
+[33mcommit c14719c95d33ccb284c29bd6664d6b587598a26e[m
+Author: brevin <cronkbrevin98@gmail.com>
+Date:   Fri Apr 24 09:30:14 2020 -0700
+
+    initial commit
