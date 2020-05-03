@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
 import { Currency } from './money-api-fetch';
+require('dotenv').config();
+
 
 $(document).ready(function() {
   $('#number-form').submit(function(event) {
