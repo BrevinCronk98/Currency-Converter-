@@ -33,7 +33,7 @@ $(document).ready(function() {
           $('#conv-disp').text(`The conversion to Euros is:  ` + convEUR);
           return convEUR;
         } else {
-          $('conv-disp').text('Oh no there was an error!');
+          $('#conv-disp').text('Oh no there was an error(non-200 response) for Euros');
         }
       }
     });
@@ -54,7 +54,7 @@ $(document).ready(function() {
           $('#conv-disp').text(`The conversion  to Japanese Yen is:  ` + convJPY);
           return convJPY;
         } else {
-          $('conv-disp').text('Oh no there was an error!');
+          $('#conv-disp').text('Oh no there was an error(non-200 response) for Japanese Yen!');
         }
       }
     });
@@ -75,7 +75,7 @@ $(document).ready(function() {
           $('#conv-disp').text(`The conversion to Russian Rubles is:  ` + convRUB);
           return convRUB;
         } else {
-          $('conv-disp').text('Oh no there was an error!');
+          $('#conv-disp').text('Oh no there was an error(non-200 response) for Russian Rubles!');
         }
       }
     });
@@ -96,7 +96,7 @@ $(document).ready(function() {
           $('#conv-disp').text(`The conversion to Fijian Dollars is:  ` + convFJD);
           return convFJD;
         } else {
-          $('conv-disp').text('Oh no there was an error!');
+          $('#conv-disp').text('Oh no there was an error(non-200 response) for Fijian Dollars!');
         }
       }
     });
@@ -117,7 +117,7 @@ $(document).ready(function() {
           $('#conv-disp').text(`The conversion to Hong Kong Dollars is:  ` + convHKD);
           return convHKD;
         } else {
-          $('conv-disp').text('Oh no there was an error!');
+          $('#conv-disp').text('Oh no there was an error(non-200 response) for Hong Kong Dollars!');
         }
       }
     });
